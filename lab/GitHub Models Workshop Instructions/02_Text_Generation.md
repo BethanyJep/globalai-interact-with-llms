@@ -10,9 +10,10 @@ Welcome to Part 1 of this workshop, where we'll be interacting with gpt-4o-mini 
 
 Let's start with a few prompts and observe the response using the GitHub Models playground. To start interacting with the model, follow the following steps:
 
-![alt text](image-8.png)
-
 1. On the model selector section, on the left-hand navigation, and click select **OpenAI GPT-4o-mini.**
+
+![Select Model, GitHub Models](Images/gh-models-select-model.JPG)
+
 2. In the playground, find the text box labeled _"Type your prompt...."_
 3. Type or copy in your prompt to the text box.
 4. After adding your prompt, locate the Paper Plane icon, usually positioned next to the input box. Click Enter or on the Paper Plane icon to submit your text to the model deployment.
@@ -54,7 +55,7 @@ Moreover, you can also instruct your LLM to extract key information from text. I
 
 >[!alert] Before moving on with the next section, click on the **Reset chat history** button to clear the message history. To do this, click on the **trash icon** on the top right of your playground, it will automatically reset your chat history.
 
-![alt text](image-9.png)
+![GitHub Models reset chat](Images/gh-models-reset-chat.JPG)
 
 ### Zero-shot learning
 
@@ -114,7 +115,7 @@ Take a step-by-step approach in your response: Start by thinking about the theme
 > [!TIP]
 > What is the **system message**? The system message is used to communicate instructions or provide context to the model at the beginning of a conversation. It is displayed in a different format compared to user messages, helping the model understand its role in the conversation. The system message typically guides the model's behavior, sets the tone, or specifies desired output from the model. By utilizing the system message effectively, users can steer the model towards generating more accurate and relevant responses.
 
-![alt text](image-10.png)
+![GitHub Models System Prompt](Images/gh-models-system-prompt.JPG)
 
 Update the System Message to give the model instructions and context as follows:
 
@@ -193,9 +194,11 @@ Write a short description for each of the following product categories: tents, b
 ## Compare Models
 
 GitHub Model provides you with a way to compare different models. We will do a comparison between gpt-4o-mini and Phi-4. To do so, you can follow the following steps:
-![alt text](image-11.png)
+
 1. Next to the model we chose, selelect the compare button. Scroll down the options and select Phi 4. This will open up two side by side playgrounds.
-![alt text](image-12.png)
+
+![alt text](Images/gh-models-compare.JPG)
+
 2. We will use the previous example to compare our models. Try the prompt below:
 
 ```
@@ -223,7 +226,7 @@ Write a short description for each of the following product categories: tents, b
 
 4. You can compare the metrics of both models as well as the quality of the response. For example, from my comparison, Gpt-4o-mini took 3361ms and Phi-4 took 9374ms to give me the response: 
 
-![alt text](image-13.png)
+![GitHub Model compare models evaluation](Images/gh-models-compare-evaluation.JPG)
 
 ## Next Steps
 

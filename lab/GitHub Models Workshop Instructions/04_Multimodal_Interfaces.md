@@ -33,7 +33,7 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 
 2. In the chat text box, click on the attachment icon to upload a local image.
 
-![alt text](image-18.png)
+![GitHub Models attachment button](./Images/gh-models-attachment.PNG)
 
 3. Select the ![image](Images/house-multimodal/01.jpeg) in the repository and upload them to the chat.
 4. Once you have uploaded the file, try this prompts to start interacting with the image:
@@ -67,17 +67,18 @@ For this next demo, we have an obstructed image. Bounding boxes were purposefull
 
 By integrating the **gpt-4o-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
 
-![alt text](image-15.png)
-
 1. Navigate back to **Microsoft Copilot** and select **Start new chat**
 
-![alt text](image-16.png)
+![Start new chat](./Images/microsoft-copilot-new-chat.JPG)
 
 2. Select the talk to Copilot option, a pop up will appear, click allow to enable interactions with audio.
 
-![alt text](image-17.png)
+![Audio interactions](./Images/microsoft-copilot-audio.JPG)
 
 3. Start interacting with Copilot with the following prompts:
+
+![Audio Playground](./Images/microsoft-copilot-audio-playground.png)
+
 
     ```Copilot, teach me some Italian phrases!```
     ```Copilot, recommend me some hidden travel gems in Africa.```
