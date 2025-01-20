@@ -57,7 +57,7 @@ The Copilot playground is made up of the following components:
 1. **Chat Box**: The chat box is where we will see our interactions with the model in the form of chat messages.
 1. **Prompt Box**: This is where we type the prompts we want to send to the model.
 
-> !TIP
+> [!NOTE]
 > To ensure you can interact with audio and generate images, ensure you sign in to Microsoft Copilot
 
 ![alt text](image-5.png)

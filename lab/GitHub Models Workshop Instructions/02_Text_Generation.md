@@ -13,9 +13,9 @@ Let's start with a few prompts and observe the response using the GitHub Models 
 ![alt text](image-8.png)
 
 1. On the model selector section, on the left-hand navigation, and click select **OpenAI GPT-4o-mini.**
-2. In the Chat playground, find the text box labeled _"Type user query here."_
-3. From the prompt examples below, click the "T" (e.g., ``here is a sample prompt``) which will automatically input for you at the current cursor location, with one click.
-4. After adding your prompt, locate the Paper Plane icon, usually positioned next to the input box. Click on the Paper Plane icon to submit your text to the model deployment.
+2. In the playground, find the text box labeled _"Type your prompt...."_
+3. Type or copy in your prompt to the text box.
+4. After adding your prompt, locate the Paper Plane icon, usually positioned next to the input box. Click Enter or on the Paper Plane icon to submit your text to the model deployment.
 5. After sending your query, wait a moment for the model to process and respond. The response will appear in the chat window below your input.
 
 Here are some examples to try, but get creative with your own prompts and see what happens!
@@ -33,17 +33,6 @@ Generate website copy for the homepage of the ice cream shop.
 ```
 
 Note that the model is providing a copy for the *SweetScoops Delight* website, even if we didn't specify again the company name or business. This is because under-the-hood the model is given the **whole conversation history** as context, not just the latest prompt. An AI model cannot learn and has no memory of previous interactions if the user leaves and comes back, but the application is using prompt engineering to add this 'memory'.
-
-> [!NOTE]
-> You can control the context window size, which is the number of previous interactions that the model will consider as context (default is 10) by going into the **Parameters** section.
-
-You can control your model parameters as follows:
-
-![image showing parameters tab](./Images/aifoundry-chat-parameters.jpeg)
-
-1. In the Chat interface, navigate to the **Parameters** section.
-2. Once in the Parameters section, adjust the setting controls. You can change the number of past messages included which the model will consider as context. Once set, the changes will be applied automatically.
-
 
 ### Summarization and key entities extraction
 
@@ -63,9 +52,9 @@ Moreover, you can also instruct your LLM to extract key information from text. I
 
 ## Advanced prompting
 
->[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history. To do this, click on the **broom-like icon** on the top right of your plaground. A pop-up will appear, click **clear button** to clear the chat history.
+>[!alert] Before moving on with the next section, click on the **Reset chat history** button to clear the message history. To do this, click on the **trash icon** on the top right of your playground, it will automatically reset your chat history.
 
-![Screenshot of the clear chat button](./Images/text-generation-clearchat.jpg)
+![alt text](image-9.png)
 
 ### Zero-shot learning
 
@@ -74,7 +63,7 @@ LLMs are trained on such large amounts of data they may be able to perform some 
 ```
 Generate 10 unique menu items for a futuristic themed restaurant, including dish names and a short description.
 ```
->[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history. 
+>[!alert] Before moving on with the next section, click on the **Reset chat history** button to clear the message history. 
 
 ### Few-shot learning
 
@@ -91,7 +80,7 @@ Asteroid Meat Feast: Loaded with pepperoni, ham, ground beef, bacon, and Italian
 
 ### Chain of thought prompting
 
->[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
+>[!alert] Before you start, click on **Reset chat history** to avoid any context from previous interactions.
 
 When interacting with LLMs, a useful tip is to imagine that you are speaking to an untrained intern. So the more details you can provide about the task to be performed, the better the results you will get. In particular, a useful strategy is to break down the task into smaller parts and provide a prompt for each part. Let's try this with the website copy generation task.
 
@@ -118,19 +107,19 @@ Take a step-by-step approach in your response: Start by thinking about the theme
 
 ## System message and added knowledge
 
->[!alert] Before moving on with the next section, click on the **Clear Chat** button to clear the message history.
+>[!alert] Before moving on with the next section, click on the **Reset chat history** button to clear the message history.
 
 ### System message
 
 > [!TIP]
 > What is the **system message**? The system message is used to communicate instructions or provide context to the model at the beginning of a conversation. It is displayed in a different format compared to user messages, helping the model understand its role in the conversation. The system message typically guides the model's behavior, sets the tone, or specifies desired output from the model. By utilizing the system message effectively, users can steer the model towards generating more accurate and relevant responses.
 
-![image showing system message tab](./Images/aifoundry-chat-instructions.jpeg)
+![alt text](image-10.png)
 
 Update the System Message to give the model instructions and context as follows:
 
-1. In the Chat interface, navigate to the **System message** section.
-2. Once in the System message section, erase the existing message. Click inside the System message field to place your cursor there and  insert the text below:
+1. In the Chat interface, navigate to the **System prompt** section.
+2. Once in the System prompt section, click inside the System prompt field to place your cursor there and  insert the text below:
 
 ```
 ## Task
@@ -142,15 +131,14 @@ Your answer should be brief and engaging. Always use a friendly and professional
 Keep the descriptions family-friendly and suitable for all age groups visiting our pizzeria. Avoid any irrelevant information and controversial opinions.
 ```
 
-3. Find the button labeled Apply changes, it is located directly below the System message box. Click this button to save and apply the changes you’ve made to the System message field.
-4. After applying the changes, click the **continue button** in the pop-up to update the system message.
+3. You have successfully updated the system prompt!
 
 
 Observe that we have provided the model with a **clear task**, a **tone of voice**, and **safety measures** to follow. Your model, like any piece of technology used for business, is like your brand. If you want it to have the same approach and ethics you instill in your code of conduct across the business, it should also be included in your AI solutions. Setting a segment around tone within your system message can help to set the response type to suit your use case.
 
 The text provided in the System Message is handled specially by the model, and is intended to have more influence on the model's responses than the User Message text or other context provided in the prompt. Also, it is persisted across all the interactions in the chat, even if you clear the chat history.
 
-5. To see how the model's behavior changes with the added context, try the prompt below in the text box:
+4. To see how the model's behavior changes with the added context, try the prompt below in the text box:
 
 ```
 Write a brief description of the restaurant, including the categories of menu items offered.
@@ -162,18 +150,18 @@ You will see that not only does the model respond with the requested information
 What are your thoughts on the just concluded election?
 ```
 
-6. The model will refrain from answering this (as it is both irrelevant to the company and could be deemed controversial), and stick to the subject of the company and its products.
+5. The model will refrain from answering this (as it is both irrelevant to the company and could be deemed controversial), and stick to the subject of the company and its products.
 
 ### Grounded prompting
 
->[!alert] Ensure to **Clear Chat** before moving on with the section.
+>[!alert] Ensure to **Reset chat history** before moving on with the section.
 
 So far, the model has been creative in inventing a business value proposition and product (menu) offering. However, in real-world scenarios, we want the model to generate text that is grounded in reality and reflects the actual business. To achieve this, we can use a technique called **Retrieval Augmented Generation (RAG)**. This technique involves providing the model with a set of facts or information about the business, which the model can then use to generate more accurate and relevant text.
 
 > [!NOTE]
 > **Retrieval-Augmented Generation (RAG)** is an AI technique that combines a language model with a search system to provide more accurate and detailed information. In a RAG pattern, the system usually retrieves relevant information from a database and then uses it to help generate more informed and contextually accurate text responses. For the sake of this lab, we will simulate the retrieval process, by providing the model with a set of facts about the business in the prompt.
 
-Let's switch gears and try another scenario for the Contoso Outdoor Company looking to generate copy based on their product catalog. Added product knowledge can be provided through the System message. Insert the information below at the end of the existing System Prompt, and then click **Apply changes**.
+Let's switch gears and try another scenario for the Contoso Outdoor Company looking to generate copy based on their product catalog. Added product knowledge can be provided through the System message. Remove the existing System Prompt and insert the information below:
 
 ```
 ## Business Information
@@ -202,8 +190,43 @@ To see how the model's behavior changes with the added context, try the prompt b
 Write a short description for each of the following product categories: tents, backpacks, hiking clothing.
 ```
 
+## Compare Models
+
+GitHub Model provides you with a way to compare different models. We will do a comparison between gpt-4o-mini and Phi-4. To do so, you can follow the following steps:
+![alt text](image-11.png)
+1. Next to the model we chose, selelect the compare button. Scroll down the options and select Phi 4. This will open up two side by side playgrounds.
+![alt text](image-12.png)
+2. We will use the previous example to compare our models. Try the prompt below:
+
+```
+## Business Information
+Contoso Outdoor Company is an e-commerce business that specializes in outdoor clothing and equipment. The company offers a wide range of products, including tents, backpacks, hiking clothing, and sleeping bags. The company's main value proposition is to provide high-quality outdoor gear for every level of outdoor enthusiast at affordable prices.
+
+Products offered:
+1. Tents: 
+    - TrailMaster X4 Tent: Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection.
+    - Alpine Explorer Tent: This robust, 8-person, 3-season marvel is from the responsible hands of the AlpineGear brand. Promising an enviable setup that is as straightforward as counting sheep, your camping experience is transformed into a breezy pastime.
+    - SkyView 2-Person Tent: This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. 
+
+2. Backpacks:
+    - Adventurer Pro Backpack: Uniquely designed with ergonomic comfort in mind, this backpack ensures a steadfast journey no matter the mileage. It boasts a generous 40L capacity wrapped up in durable nylon fabric ensuring its long-lasting performance on even the most rugged pursuits. 
+    - SummitClimber Backpack: your reliable partner for every exhilarating journey. With a generous 60-liter capacity and multiple compartments and pockets, packing is a breeze. Every feature points to comfort and convenience; the ergonomic design and adjustable hip belt ensure a pleasantly personalized fit, while padded shoulder straps protect you from the burden of carrying. 
+    - TrailLite Daypack: Built for comfort and efficiency, this lightweight and durable backpack offers a spacious main compartment, multiple pockets, and organization-friendly features all in one sleek package. 
+
+3. Hiking Clothing:
+    - Summit Breeze Jacket: This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. 
+    - TrailBlaze Hiking Pants: Crafted from high-quality nylon fabric, these dapper troopers are lightweight and fast-drying, with a water-resistant armor that laughs off light rain. Their breathable design whisks away sweat while their articulated knees grant you the flexibility of a mountain goat.
+    - RainGuard Hiking Jacket: the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable.
+
+Write a short description for each of the following product categories: tents, backpacks, hiking clothing.
+```
+
+4. You can compare the metrics of both models as well as the quality of the response. For example, from my comparison, Gpt-4o-mini took 3361ms and Phi-4 took 9374ms to give me the response: 
+
+![alt text](image-13.png)
+
 ## Next Steps
 
 Congratulations, you have completed the first part of the lab! You have learned how to use prompt engineering to generate text using a language model. In the next part of the lab, you will learn how to use the model to generate image assets.
 
-Click **Next** to advance to the Image section.
+Move to [Image Generation](03_Image_Generation.md) to proceed to the Image Generation section.
