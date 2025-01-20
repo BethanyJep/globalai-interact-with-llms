@@ -27,31 +27,29 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 
 ## Interacting with the model using an Image
 
-1. Navigate to the  **playgrounds** section and select **Try the Chat Playground**
+1. Navigate to the  **GitHub Models chat.**
 
->[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
+>[!alert] Before you start, click on **Reset Chat History** to avoid any context from previous interactions.
 
 2. In the chat text box, click on the attachment icon to upload a local image.
 
-![Uploading image as input](./Images/upload_image_icon.png)
+![alt text](image-18.png)
 
-3. Select all the images from the ```house-multimodal``` folder on your desktop.
-4. Once you have uploaded the files, try these prompts to start interacting with the image:
+3. Select the ![image](Images/house-multimodal/01.jpeg) in the repository and upload them to the chat.
+4. Once you have uploaded the file, try this prompts to start interacting with the image:
 
 ```
 Create a tagline and short description for this rental home advertisement.
 - The first picture is from the home
-- The other pictures are from sights nearby
 - In the description use the features of the house and make the ad more compelling with the sights. 
 - Do not talk about features not visible in the images.
-- If you have information about the location of the images, use that information in the description
 ```
 
 ## Providing Context
 
 For this next demo, we have an obstructed image. Bounding boxes were purposefully added in the image to obscure the full context.
 
-1. _Clear the chat_ and in the chat text box, add the prompt: ``what is that?``
+1. _Reset Chat History_ and in the chat text box, add the prompt: ``what is that?``
 2. Click on the attachment icon and go to Desktop folder and upload [context-001](./Images/context-001.png) image and send the prompt.
 
 
@@ -69,24 +67,28 @@ For this next demo, we have an obstructed image. Bounding boxes were purposefull
 
 By integrating the **gpt-4o-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
 
-1. Navigate back to **Playgrounds** and select **try Real-time audio playground** and set the deployment to **gpt-4o-realtime-preview**
+![alt text](image-15.png)
 
-2. Update the **model instructions box** with the following:
+1. Navigate back to **Microsoft Copilot** and select **Start new chat**
 
-    ```You are a pirate, and every response must be full of pirate lingo. ```
+![alt text](image-16.png)
 
-3. In the playground, click **enable microphone,** a pop up will appear, click allow to enable interactions with audio.
+2. Select the talk to Copilot option, a pop up will appear, click allow to enable interactions with audio.
 
-![enable audio in AI Foundry](./Images/aifoundry-enable-audio.jpeg)
+![alt text](image-17.png)
 
-4. Interact with the model by clicking on the **start listening** button, saying ``hello`` and ask the model a few facts.
+3. Start interacting with Copilot with the following prompts:
 
-5. Next, change the tone with the system message as follows and interact with the model again: 
+    ```Copilot, teach me some Italian phrases!```
+    ```Copilot, recommend me some hidden travel gems in Africa.```
+    ```Copilot, brainstorm some unique birthday gift ideas.```
+    ```Hey Copilot, how do I make the perfect pot of tea?```
 
-```You are a valiant medieval knight. Every response should echo the chivalry, honor, and grandeur of the court. Speak with formality and grace, as if addressing kings, queens, and noble warriors.```
+> [!TIP]
+> You can select Settings to change the voices between Wave, Grove, Canyon and Meadow.
 
 ## Next Steps
 
-Congratulations! You have now completed the 3rd part of the lab and you learnt how to interact with multimodal models. 
+Congratulations! You have now completed the lab and you learnt how to interact with multimodal models. 
 
-Click **Next** to proceed to the Azure AI Assistants section.
+Move to [Summary](07_Summary.md) to proceed to complete the lab.

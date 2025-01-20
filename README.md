@@ -2,7 +2,7 @@
 
 [![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4?WT.mc_id=aiml-137032-bethanycheum)
 
-[![Open in Codespaces]() 
+<!-- [![Open in Codespaces]()  -->
 
 This repository is for the AI Tour workshop: *Interacting with Multimodal models in GitHub Models*
 
@@ -12,7 +12,7 @@ This repository is for the AI Tour workshop: *Interacting with Multimodal models
 
 This workshop is designed to give you a hands-on introduction to the core concepts and best practices for interacting with OpenAI models in GitHub Models portal. We will be running the workshop using [GitHub Models](https://github.com/marketplace/models) and [Microsoft Copilot](https://copilot.microsoft.com/).
 
-[![Open in Codespaces]() 
+<!-- [![Open in Codespaces]()  -->
 
 ### Abstract
 
